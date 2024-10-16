@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Login</title>
+  </head>
+  <body>
+    <form action="#" method="#">
+		<label for="nome">
+			Nome:
+			<input type="text" placeholder="Escreva o seu nome" name="nome" id="nome" minlength="3" required />
+		  </label><br>
+		<label for="email">
+			Email:
+			<input type="email" placeholder="Escreva o seu email" name="email" id="email" required />
+		</label><br>
+		<label for="idade">
+			Idade:
+			<input type="number" placeholder="Escreva a sua idade" name="idade" id="idade" required />
+		</label><br>
+		<label for="dn">
+			Data de Nascimento:
+			<input type="date" name="dn" id="dn" />
+		</label><br>
+		<label for="nacionalidade">
+			Nacionalidade:
+			<select name="nacionalidade" id="nacionalidade">
+				<option value="portugal">Portugal</option>
+				<option value="suica">Suiça</option>
+				<option value="russia">Rússia</option>
+				<option value="indonesia">Indonésia</option>
+			</select>
+		</label><br>
+		<label for="pw">
+			Palavra-Passe:
+			<input 
+				type="password" 
+				placeholder="Escreva a sua palavra-passe" 
+				name="pw" 
+				id="pw" 
+				pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+				title="A palavra-passe deve ter no mínimo 8 caracteres, uma letra maiúscula e uma letra minúscula" 
+				required/>
+		</label><br>
+		<input type="submit" value="Submeter Formulário" />
+    </form>
+  </body>
+</html>
