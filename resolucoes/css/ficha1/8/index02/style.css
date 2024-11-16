@@ -1,0 +1,36 @@
+body {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-areas: 
+    "green-section green-section green-section"
+    "yellow-section red-section blue-section"
+    "yellow-section red-section blue-section"
+    "orange-section orange-section blue-section";
+}
+
+#green {
+	grid-area: green-section;
+}
+
+#yellow {
+	grid-area: yellow-section;
+}
+
+#orange {
+	grid-area: orange-section;
+}
+
+#blue {
+	grid-area: blue-section;
+}
+
+#red {
+	grid-area: red-section;
+}
+
+#yellow ul, #red ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+	grid-template-rows: 1fr 1fr;
+  }

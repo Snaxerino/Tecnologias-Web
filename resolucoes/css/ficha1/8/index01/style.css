@@ -1,0 +1,29 @@
+body {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-areas: 
+    "green-section green-section green-section"
+    "yellow-section orange-section red-section"
+    "yellow-section blue-section red-section";
+}
+
+#green {
+	grid-area: green-section;
+}
+
+#yellow {
+	grid-area: yellow-section;
+}
+
+#orange {
+	grid-area: orange-section;
+}
+
+#blue {
+	grid-area: blue-section;
+}
+
+#red {
+	grid-area: red-section;
+}
