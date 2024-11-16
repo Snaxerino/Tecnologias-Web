@@ -1,0 +1,33 @@
+:root {
+	--bg: #000;
+	--text: #fff;
+	--fontFamily: 'Arial';
+	--fontBody: 16px;
+	--fontHead: 40px;
+	--maxWidth: 800px;
+	--lineHeight: 24px;
+	--imgWidth: 1000px;
+}
+
+body {
+	background-color: var(--bg);
+}
+
+.hero {
+	color: var(--text);
+	font-family: var(--fontFamily);
+}
+
+.headline {
+	font-size: var(--fontHead);
+}
+
+.paragraph {
+	width: var(--maxWidth);
+	line-height: var(--lineHeight);
+	font-size: var(--fontBody);
+}
+
+.image {
+	width: var(--imgWidth);
+}
