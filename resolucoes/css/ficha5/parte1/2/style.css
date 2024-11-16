@@ -1,0 +1,57 @@
+:root {
+	--bgSection: #c1dcdc;
+	--text: #1a1a1a;
+	--placeholderTextColor: #808080;
+	--bgButton: #1a1a1a;
+	--textButton : #fff;
+	--fontFamily: 'Arial';
+	--fontBody: 16px;
+	--fontHead: 50px;
+	--fontSizeLabel: 18px;
+	--fontWeightLabel: medium;
+	--inputRadius: 12px;
+	--inputFontSize: 16px;
+	
+}
+
+body {
+	background-color: var(--bgSection);
+}
+
+.hero {
+	color: var(--text);
+	font-family: var(--fontFamily);
+	font-size: var(--fontBody);
+	padding: 120px 80px;
+}
+
+.headline {
+	font-size: var(--fontHead);
+}
+
+.form_label {
+	font-size: var(--fontSizeLabel);
+	font-weight: var(--fontWeightLabel);
+}
+
+.form_input {
+	border-radius: var(--inputRadius);
+	border: none;
+	padding: 18px;
+	margin-top: 10px;
+	width: 400px;
+}
+
+.form_input::placeholder {
+	color: var(--placeholderTextColor);
+}
+
+.form_submit {
+	background: var(--bgButton);
+	border: none;
+	border-radius: 12px;
+	color: var(--textButton);
+	cursor: pointer;
+	padding: 18px 36px;
+	margin-top: 20px;
+}
