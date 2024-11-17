@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--bg: #e2dcff;
+	--bgTag: #35dff4; /* Não percebi para que serve isto */
+	--colorTag: #7d5fff;
+	--colorhead: #3d3269;
+	--colorText: #1a1a1a;
+}
+
+body {
+	font-family: "Jost", sans-serif;
+	width: 100%;
+	display: grid;
+	place-content: center;
+	background-color: var(--bg);
+}
+
+.wrapper {
+	max-width: 1440px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.caption {
+	color: var(--colorTag);
+	align-self: center;
+	margin-top: 48px;
+}
+
+.title {
+	max-width: 1024px;
+	color: var(--colorhead);
+	font-size: 56px;
+	line-height: 64px;
+	text-align: center;
+	margin-top: 12px;
+	margin-bottom: 32px;
+}
+
+.divider {
+	border: 1px solid #b3b3b3;
+	height: 1px;
+	width: 100%;
+}
+
+.info {
+	color: var(--colorText);
+	margin-top: 16px;
+	font-size: 18px;
+}
+
+.image {
+	width: 1440px;
+	border-radius: 32px;
+}
