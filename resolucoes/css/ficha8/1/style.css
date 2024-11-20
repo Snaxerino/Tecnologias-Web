@@ -1,0 +1,26 @@
+body {
+	background-color: #fff; /* Por default já é #fff*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	padding: 80px;
+	width: 100%;
+}
+
+img {
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 768px) {
+	.wrapper {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(25 1fr);
+	}
+}
